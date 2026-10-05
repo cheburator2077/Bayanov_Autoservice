@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35825.156 d17.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bayanov_Autoservice", "Bayanov_Autoservice.csproj", "{ED419D2E-399B-46D7-B384-E1C32893DBFC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ED419D2E-399B-46D7-B384-E1C32893DBFC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED419D2E-399B-46D7-B384-E1C32893DBFC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED419D2E-399B-46D7-B384-E1C32893DBFC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED419D2E-399B-46D7-B384-E1C32893DBFC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {35C73CD9-B6D0-4C72-AE1B-7FABB77292D1}
+	EndGlobalSection
+EndGlobal

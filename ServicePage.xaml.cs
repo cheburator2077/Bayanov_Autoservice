@@ -23,6 +23,9 @@ namespace Bayanov_Autoservice
         public ServicePage()
         {
             InitializeComponent();
+
+            var currentServices = BayanovAutoserviceEntities.GetContext().Service.ToList();
+            ServiceListView.ItemsSource = currentServices;
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)

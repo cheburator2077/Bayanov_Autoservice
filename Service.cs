@@ -14,6 +14,15 @@ namespace Bayanov_Autoservice
     
     public partial class Service
     {
+        private static BayanovAutoserviceEntities _context;
+
+        public static BayanovAutoserviceEntities GetContext()
+        {
+            if (_context == null)
+                _context = new BayanovAutoserviceEntities();
+
+            return _context;
+        }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public Service()
         {

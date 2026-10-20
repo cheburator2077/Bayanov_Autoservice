@@ -62,7 +62,7 @@ namespace Bayanov_Autoservice
             var currenrServices = BayanovAutoserviceEntities.GetContext().Service.ToList();
             if(ComboType.SelectedIndex == 0)
             {
-                currenrServices = currenrServices.Where(p => (p.Discount >= 0.0 && p.Discount <= 0.100)).ToList();
+                currenrServices = currenrServices.Where(p => (p.Discount >= 0.0 && p.Discount <= 1.00)).ToList();
             }
             if (ComboType.SelectedIndex == 1)
             {
@@ -82,7 +82,7 @@ namespace Bayanov_Autoservice
             }
             if (ComboType.SelectedIndex == 5)
             {
-                currenrServices = currenrServices.Where(p => (p.Discount >= 0.70 && p.Discount < 0.100)).ToList();
+                currenrServices = currenrServices.Where(p => (p.Discount >= 0.70 && p.Discount < 1.00)).ToList();
             }
 
             currenrServices = currenrServices.Where(p => p.Title.ToLower().Contains(TBoxSearch.Text.ToLower())).ToList();
@@ -98,6 +98,11 @@ namespace Bayanov_Autoservice
             }
 
             ServiceListView.ItemsSource = currenrServices;
+        }
+
+        private void AddButton_Click(object sender, RoutedEventArgs e)
+        {
+            Manager.MainFrame.Navigate(new AddEditPage());
         }
     }
 }

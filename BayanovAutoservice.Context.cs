@@ -24,7 +24,6 @@ namespace Bayanov_Autoservice
 
             return _context;
         }
-
         public BayanovAutoserviceEntities()
             : base("name=BayanovAutoserviceEntities")
         {

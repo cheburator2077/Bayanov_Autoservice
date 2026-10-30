@@ -4,7 +4,7 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="ec8057bed6054d66a10220203566182d" Name="Diagram1">
+      <Diagram DiagramId="f25bdfcde1324a779799080a0af07acd" Name="Diagram1">
         <EntityTypeShape EntityType="BayanovAutoserviceModel.Client" Width="1.5" PointX="0.75" PointY="7.375" IsExpanded="true" />
         <EntityTypeShape EntityType="BayanovAutoserviceModel.ClientService" Width="1.5" PointX="3" PointY="9.625" IsExpanded="true" />
         <EntityTypeShape EntityType="BayanovAutoserviceModel.DocumentByService" Width="1.5" PointX="5.25" PointY="10" IsExpanded="true" />
@@ -19,7 +19,7 @@
         <EntityTypeShape EntityType="BayanovAutoserviceModel.Tag" Width="1.5" PointX="3" PointY="16.25" IsExpanded="true" />
         <AssociationConnector Association="BayanovAutoserviceModel.FK_Client_Gender" ManuallyRouted="false" />
         <AssociationConnector Association="BayanovAutoserviceModel.FK_ClientService_Client" ManuallyRouted="false" />
-        <AssociationConnector Association="BayanovAutoserviceModel.FK_ClientService_Service" ManuallyRouted="false" />
+        <AssociationConnector Association="BayanovAutoserviceModel.FK_ClientService_Service1" ManuallyRouted="false" />
         <AssociationConnector Association="BayanovAutoserviceModel.FK_DocumentByService_ClientService" ManuallyRouted="false" />
         <AssociationConnector Association="BayanovAutoserviceModel.FK_ProductSale_ClientService" ManuallyRouted="false" />
         <AssociationConnector Association="BayanovAutoserviceModel.FK_Product_Manufacturer" ManuallyRouted="false" />

@@ -67,60 +67,63 @@
     <Compile Include="AddEditPage.xaml.cs">
       <DependentUpon>AddEditPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="BayanovModel.Context.cs">
+    <Compile Include="BayanovAutoservice.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>BayanovModel.Context.tt</DependentUpon>
+      <DependentUpon>BayanovAutoservice.Context.tt</DependentUpon>
     </Compile>
-    <Compile Include="BayanovModel.cs">
+    <Compile Include="BayanovAutoservice.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>BayanovModel.tt</DependentUpon>
+      <DependentUpon>BayanovAutoservice.tt</DependentUpon>
     </Compile>
-    <Compile Include="BayanovModel.Designer.cs">
+    <Compile Include="BayanovAutoservice.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>BayanovModel.edmx</DependentUpon>
+      <DependentUpon>BayanovAutoservice.edmx</DependentUpon>
     </Compile>
     <Compile Include="Client.cs">
-      <DependentUpon>BayanovModel.tt</DependentUpon>
+      <DependentUpon>BayanovAutoservice.tt</DependentUpon>
     </Compile>
     <Compile Include="ClientService.cs">
-      <DependentUpon>BayanovModel.tt</DependentUpon>
+      <DependentUpon>BayanovAutoservice.tt</DependentUpon>
     </Compile>
     <Compile Include="DocumentByService.cs">
-      <DependentUpon>BayanovModel.tt</DependentUpon>
+      <DependentUpon>BayanovAutoservice.tt</DependentUpon>
     </Compile>
     <Compile Include="Gender.cs">
-      <DependentUpon>BayanovModel.tt</DependentUpon>
+      <DependentUpon>BayanovAutoservice.tt</DependentUpon>
     </Compile>
     <Compile Include="Manager.cs" />
     <Compile Include="Manufacturer.cs">
-      <DependentUpon>BayanovModel.tt</DependentUpon>
+      <DependentUpon>BayanovAutoservice.tt</DependentUpon>
     </Compile>
     <Compile Include="Product.cs">
-      <DependentUpon>BayanovModel.tt</DependentUpon>
+      <DependentUpon>BayanovAutoservice.tt</DependentUpon>
     </Compile>
     <Compile Include="ProductPhoto.cs">
-      <DependentUpon>BayanovModel.tt</DependentUpon>
+      <DependentUpon>BayanovAutoservice.tt</DependentUpon>
     </Compile>
     <Compile Include="ProductSale.cs">
-      <DependentUpon>BayanovModel.tt</DependentUpon>
+      <DependentUpon>BayanovAutoservice.tt</DependentUpon>
     </Compile>
     <Compile Include="Service.cs">
-      <DependentUpon>BayanovModel.tt</DependentUpon>
+      <DependentUpon>BayanovAutoservice.tt</DependentUpon>
     </Compile>
     <Compile Include="ServicePage.xaml.cs">
       <DependentUpon>ServicePage.xaml</DependentUpon>
     </Compile>
     <Compile Include="ServicePhoto.cs">
-      <DependentUpon>BayanovModel.tt</DependentUpon>
+      <DependentUpon>BayanovAutoservice.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SignUpPage.xaml.cs">
+      <DependentUpon>SignUpPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="sysdiagrams.cs">
-      <DependentUpon>BayanovModel.tt</DependentUpon>
+      <DependentUpon>BayanovAutoservice.tt</DependentUpon>
     </Compile>
     <Compile Include="Tag.cs">
-      <DependentUpon>BayanovModel.tt</DependentUpon>
+      <DependentUpon>BayanovAutoservice.tt</DependentUpon>
     </Compile>
     <Page Include="AddEditPage.xaml">
       <SubType>Designer</SubType>
@@ -139,6 +142,10 @@
       <SubType>Code</SubType>
     </Compile>
     <Page Include="ServicePage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SignUpPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -161,12 +168,12 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EntityDeploy Include="BayanovModel.edmx">
+    <EntityDeploy Include="BayanovAutoservice.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>BayanovModel.Designer.cs</LastGenOutput>
+      <LastGenOutput>BayanovAutoservice.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <None Include="BayanovModel.edmx.diagram">
-      <DependentUpon>BayanovModel.edmx</DependentUpon>
+    <None Include="BayanovAutoservice.edmx.diagram">
+      <DependentUpon>BayanovAutoservice.edmx</DependentUpon>
     </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -187,15 +194,35 @@
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="BayanovModel.Context.tt">
+    <Resource Include="Услуги автосервиса\diz.jpg" />
+    <Resource Include="Услуги автосервиса\rulevoe-upravlenie-avtomobilya.jpg" />
+    <Resource Include="Услуги автосервиса\transmission.jpg" />
+    <Resource Include="Услуги автосервиса\АКПП.jpg" />
+    <Resource Include="Услуги автосервиса\Вариатор.jpg" />
+    <Resource Include="Услуги автосервиса\Выхлопная система.jpg" />
+    <Resource Include="Услуги автосервиса\ГУР.png" />
+    <Resource Include="Услуги автосервиса\Двигатель.png" />
+    <Resource Include="Услуги автосервиса\Дополнительные услуги.png" />
+    <Resource Include="Услуги автосервиса\Кондиционер.jpg" />
+    <Resource Include="Услуги автосервиса\КПП.png" />
+    <Resource Include="Услуги автосервиса\Подвеска.png" />
+    <Resource Include="Услуги автосервиса\Сцепление.jpg" />
+    <Resource Include="Услуги автосервиса\Техническое обслуживание.png" />
+    <Resource Include="Услуги автосервиса\Топливная система.png" />
+    <Resource Include="Услуги автосервиса\Шиномонтаж.jpg" />
+    <Resource Include="Услуги автосервиса\Электрика.png" />
+    <Resource Include="res\picture.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="BayanovAutoservice.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>BayanovModel.edmx</DependentUpon>
-      <LastGenOutput>BayanovModel.Context.cs</LastGenOutput>
+      <DependentUpon>BayanovAutoservice.edmx</DependentUpon>
+      <LastGenOutput>BayanovAutoservice.Context.cs</LastGenOutput>
     </Content>
-    <Content Include="BayanovModel.tt">
+    <Content Include="BayanovAutoservice.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>BayanovModel.edmx</DependentUpon>
-      <LastGenOutput>BayanovModel.cs</LastGenOutput>
+      <DependentUpon>BayanovAutoservice.edmx</DependentUpon>
+      <LastGenOutput>BayanovAutoservice.cs</LastGenOutput>
     </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

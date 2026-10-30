@@ -45,8 +45,8 @@ namespace Bayanov_Autoservice
             if (string.IsNullOrWhiteSpace(_currentService.Discount.ToString()))
                 errors.AppendLine("Укажите скидку");
 
-            if (string.IsNullOrWhiteSpace(_currentService.DurationInSeconds))
-                errors.AppendLine("Укажите название услуги");
+            if (_currentService.DurationInSeconds == 0)
+                errors.AppendLine("Укажите длительность услуги");
 
             if (errors.Length > 0)
             {
